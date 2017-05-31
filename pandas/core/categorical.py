@@ -248,7 +248,7 @@ class Categorical(PandasObject):
     __array_priority__ = 1000
     _typ = 'categorical'
 
-    def __init__(self, values, categories=None, ordered=False, fastpath=False):
+    def __init__(self, values, categories=None, ordered=False, fastpath=False, **kwargs):
 
         self._validate_ordered(ordered)
 
